@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- Template for KTM -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>KTM - Ready to Race</title>
+        <style type="text/css">
+            html, #page { padding:0; margin:0;}
+            body { margin:0; padding:0; width:100%; color:#333; font:normal 12px/2.0em Sans-Serif;} 
+            h1, h2, h3, h4, h5, h6 {color:#FF6600;}
+            #page { background:#f2f2f2;}
+            #header, #footer, #top-nav, #content, #content #contentbar, #content #sidebar { margin:0; padding:0;}
+                        
+            /* Logo */
+            #logo { padding:10px; width:auto; float:left;}
+            #logo img { width: 200px; height: auto; } /* Adjust the size as needed */
+
+            /* Header */
+            #header { background:#f2f2f2; }
+            #header-inner { margin:0 auto; padding:10px; width:970px;background:#fff;}
+            
+            /* Feature */
+            .feature { background:#f2f2f2;padding:0;}
+            .feature-inner { margin:auto;padding:10px;width:970px;background:#FF6600; }
+            .feature-inner h1 {color:#fff;font-size:32px;}
+            
+            /* Menu */
+            #top-nav { margin:0 auto; padding:0px 0 0; height:37px; float:right;}
+            #top-nav ul { list-style:none; padding:0; height:37px; float:left;}
+            #top-nav ul li { margin:0; padding:0 0 0 8px; float:left;}
+            #top-nav ul li a { display:block; margin:0; padding:8px 20px; color:#FF6600; text-decoration:none;}
+            #top-nav ul li.active a, #top-nav ul li a:hover { color:#fff; background-color: #FF6600;}
+            
+            /* Content */
+            #content-inner { margin:0 auto; padding:10px; width:970px;background:#fff;}
+            #content #contentbar { margin:0; padding:0; float:right; width:760px;}
+            #content #contentbar .article { margin:0 0 24px; padding:0 20px 0 15px; }
+            #content #sidebar { padding:0; float:left; width:200px;}
+            #content #sidebar .widget { margin:0 0 12px; padding:8px 8px 8px 13px;line-height:1.4em;}
+            #content #sidebar .widget h3 a { text-decoration:none;}
+            #content #sidebar .widget ul { margin:0; padding:0; list-style:none; color:#333;}
+            #content #sidebar .widget ul li { margin:0;}
+            #content #sidebar .widget ul li { padding:4px 0; width:185px;}
+            #content #sidebar .widget ul li a { color:#FF6600; text-decoration:none; margin-left:-16px; padding:4px 8px 4px 16px;}
+            #content #sidebar .widget ul li a:hover { color:#fff; background-color: #FF6600;}
+            
+            /* Footerblurb */
+            #footerblurb { background:#f2f2f2;color:#333;}
+            #footerblurb-inner { margin:0 auto; width:970px; padding:10px;background:#FF6600;border-bottom-right-radius:15px;border-bottom-left-radius:15px;color:#fff;}
+            #footerblurb .column { margin:0; text-align:justify; float:left;width:250px;padding:0 24px;}
+            #footerblurb .column h2 span { color: #000; } /* Change the color of footer column headings */
+            
+            /* Footer */
+            #footer { background:#f2f2f2;}
+            #footer-inner { margin:auto; text-align:center; padding:12px; width:970px; color: black; }
+            #footer a {color: black; text-decoration:none;}
+            
+            /* Clear both sides to assist with div alignment  */
+            .clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
+        </style>
+        <script type="text/javascript">
+            var bodyText=["KTM is ready to race!", "Experience the thrill of the ride.", "The ultimate performance machine.", "Unleash your spirit of adventure.", "The future of motorcycling.", "Innovative design and technology.", "<h2>Heading</h2><p>Feel the adrenaline rush with KTM."]
+            function generateText(sentenceCount){
+                for (var i=0; i<sentenceCount; i++)
+                document.write(bodyText[Math.floor(Math.random()*7)]+" ")
+            }
+        </script>
+    </head>
+    <body>
+        <div id="page">
+            <header id="header">
+                <div id="header-inner">    
+                    <div id="logo">
+                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/KTM-Logo.svg/2560px-KTM-Logo.svg.png" alt="KTM Logo"></a>
+                    </div>
+                    <div id="top-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Bikes</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+            </header>
+            <div class="feature">
+                <div class="feature-inner">
+                    <h1>Welcome to KTM</h1>
+                </div>
+            </div>
+        
+            <div id="content">
+                <div id="content-inner">
+                
+                    <main id="contentbar">
+                        <div class="article">
+                            <p><script>generateText(12)</script></p>
+                        </div>
+                    </main>
+                    
+                    <nav id="sidebar">
+                        <div class="widget">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="#">Latest Models</a></li>
+                                <li><a href="#">Dealers</a></li>
+                                <li><a href="#">Racing Team</a></li>
+                                <li><a href="#">Merchandise</a></li>
+                                <li><a href="#">Support</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    
+                    <div class="clr"></div>
+                </div>
+            </div>
+        
+            <div id="footerblurb">
+                <div id="footerblurb-inner">
+                    <div class="column">
+                        <h2><span>About Us</span></h2>
+                        <p>At KTM Adventure Bikes, we are passionate about providing the best motorcycles and service to our customers. Our experienced team is here to help you find the perfect bike for your adventures.</p>
+                    </div>    
+                    <div class="column">
+                        <h2><span>Store Hours</span></h2>
+                        <p>Monday - Friday: 9am - 6pm<br>Saturday: 9am - 5pm<br>Sunday: Closed</p>
+                    </div>
+                    <div class="column">
+                        <h2><span>Contact Us</span></h2>
+                        <p>Email: info@abcdef.com<br>Phone: 1112223334<br>Address: abc, def, edkskj</p>
+                    </div>    
+                    <div class="clr"></div>
+                </div>
+            </div>
+
+            <footer id="footer">
+                <div id="footer-inner">
+                    <p>&copy; Copyright <a href="#">KTM</a> &#124; <a href="#">Terms of Use</a> &#124; <a href="#">Privacy Policy</a></p>
+                    <div class="clr"></div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
